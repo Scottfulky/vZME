@@ -1,0 +1,312 @@
+{
+  "name": "Olive Branch (OLV)",
+  "id": "a8388113-b052-43e1-aa67-3652d5e82413",
+  "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME-vATIS-Updates/refs/heads/main/vATIS%20Profile%20-%20Fayetteville%20Drake%20(FYV).json?token=GHSAT0AAAAAAC5EQA7OLZD5LCQMMY567542Z4BPPSQ",
+  "updateSerial": 2025011001,
+  "composites": [
+    {
+      "id": "d891a829-a9a0-467d-bb24-c73343439b1d",
+      "name": "Olive Branch",
+      "identifier": "KOLV",
+      "atisType": "Combined",
+      "codeRange": {
+        "low": "A",
+        "high": "Z"
+      },
+      "frequency": 119925000,
+      "atisVoice": {
+        "useTextToSpeech": false,
+        "voice": "Default"
+      },
+      "idsEndpoint": "",
+      "useNotamPrefix": true,
+      "useDecimalTerminology": false,
+      "airportConditionsBeforeFreeText": false,
+      "notamsBeforeFreeText": false,
+      "presets": [
+        {
+          "id": "5323f8fa-7429-40ea-9bf3-35b13491242a",
+          "name": "NORTH (VMC)",
+          "airportConditions": "LDG AND DEPTG RWY 36. ARRS EXPT VIS APPROACH RWY 36.",
+          "notams": "HAZ WX INFO TN AND SURROUNDING STATES AVBL ON FSS FREQ. FOR VFR FLIGHT FOLLOWING NOTIFY GND CTL.",
+          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "9b49ba81-a9ec-4d15-8fda-aad8b3cf438c",
+          "name": "NORTH (IMC)",
+          "airportConditions": "LDG AND DEPTG RWY 36. ARRS EXPT RNAV APPROACH RWY 36.",
+          "notams": "HAZ WX INFO TN AND SURROUNDING STATES AVBL ON FSS FREQ. FOR VFR FLIGHT FOLLOWING NOTIFY GND CTL.",
+          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "2e3930f0-a998-4010-b3a3-fbba6c7269b8",
+          "name": "SOUTH (VMC) ",
+          "airportConditions": "LDG AND DEPTG RWY 18. ARRS EXPT VIS APPROACH RWY 18.",
+          "notams": "HAZ WX INFO TN AND SURROUNDING STATES AVBL ON FSS FREQ. FOR VFR FLIGHT FOLLOWING NOTIFY GND CTL.\n",
+          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "0823ead4-c119-4953-b6d6-308c3f95e2cb",
+          "name": "SOUTH (IMC) ",
+          "airportConditions": "LDG AND DEPTG RWY 18. ARRS EXPT ILS APPROACH RWY 18.",
+          "notams": "HAZ WX INFO TN AND SURROUNDING STATES AVBL ON FSS FREQ. FOR VFR FLIGHT FOLLOWING NOTIFY GND CTL.",
+          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
+          "externalGenerator": {
+            "enabled": false
+          }
+        }
+      ],
+      "contractions": [
+        {
+          "string": "TN",
+          "spoken": "TENNESSEE"
+        },
+        {
+          "string": "FSS",
+          "spoken": "FLIGHT SERVICE"
+        }
+      ],
+      "airportConditionDefinitions": [],
+      "notamDefinitions": [
+        {
+          "ordinal": 1,
+          "text": "HAZARDOUS WEATHER FOR MISSISSIPPI AND SURROUNDING STATES AVAILABLE ON FLIGHT SERVICE FREQUENCIES.",
+          "enabled": false
+        },
+        {
+          "ordinal": 2,
+          "text": "FOR VFR FLIGHT FOLLOWING NOTIFY GROUND CONTROL. ",
+          "enabled": false
+        },
+        {
+          "ordinal": 3,
+          "text": "GROUND AND TOWER COMBINED ON 125.800. ",
+          "enabled": false
+        }
+      ],
+      "atisFormat": {
+        "observationTime": {
+          "template": {
+            "text": "{time}Z",
+            "voice": "{time} ZULU {special}"
+          }
+        },
+        "surfaceWind": {
+          "speakLeadingZero": false,
+          "magneticVariation": {
+            "enabled": false,
+            "magneticDegrees": 0
+          },
+          "standard": {
+            "template": {
+              "text": "{wind_dir}{wind_spd}KT",
+              "voice": "WIND {wind_dir} AT {wind_spd}"
+            }
+          },
+          "standardGust": {
+            "template": {
+              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
+              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+            }
+          },
+          "variable": {
+            "template": {
+              "text": "VRB{wind_spd}KT",
+              "voice": "WIND VARIABLE AT {wind_spd}"
+            }
+          },
+          "variableGust": {
+            "template": {
+              "text": "VRB{wind_spd}G{wind_gust}KT",
+              "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
+            }
+          },
+          "variableDirection": {
+            "template": {
+              "text": "{wind_vmin}V{wind_vmax}",
+              "voice": "WIND VARIABLE BETWEEN {wind_vmin} AND {wind_vmax}"
+            }
+          },
+          "calm": {
+            "calmWindSpeed": 2,
+            "template": {
+              "text": "{wind}",
+              "voice": "WIND CALM"
+            }
+          }
+        },
+        "visibility": {
+          "north": "to the north",
+          "northEast": "to the north-east",
+          "east": "to the east",
+          "southEast": "to the south-east",
+          "south": "to the south",
+          "southWest": "to the south-west",
+          "west": "to the west",
+          "northWest": "to the north-west",
+          "unlimitedVisibilityVoice": "visibility 10 kilometers or more",
+          "unlimitedVisibilityText": "VIS 10KM",
+          "includeVisibilitySuffix": true,
+          "metersCutoff": 5000,
+          "template": {
+            "text": "{visibility}",
+            "voice": "VISIBILITY {visibility}"
+          }
+        },
+        "presentWeather": {
+          "lightIntensity": "light",
+          "moderateIntensity": "",
+          "heavyIntensity": "heavy",
+          "vicinity": "in vicinity",
+          "weatherTypes": {
+            "DZ": "drizzle",
+            "RA": "rain",
+            "SN": "snow",
+            "SG": "snow grains",
+            "IC": "ice crystals",
+            "PL": "ice pellets",
+            "GR": "hail",
+            "GS": "small hail",
+            "UP": "unknown precipitation",
+            "BR": "mist",
+            "FG": "fog",
+            "FU": "smoke",
+            "VA": "volcanic ash",
+            "DU": "widespread dust",
+            "SA": "sand",
+            "HZ": "haze",
+            "PY": "spray",
+            "PO": "well developed dust, sand whirls",
+            "SQ": "squalls",
+            "FC": "funnel cloud tornado waterspout",
+            "SS": "sandstorm",
+            "DS": "dust storm"
+          },
+          "weatherDescriptors": {
+            "PR": "partial",
+            "BC": "patches",
+            "MI": "shallow",
+            "DR": "low drifting",
+            "BL": "blowing",
+            "SH": "showers",
+            "TS": "thunderstorm",
+            "FZ": "freezing"
+          },
+          "template": {
+            "text": "{weather}",
+            "voice": "{weather}"
+          }
+        },
+        "clouds": {
+          "identifyCeilingLayer": true,
+          "convertToMetric": false,
+          "undeterminedLayerAltitude": {
+            "text": "undetermined",
+            "voice": "undetermined"
+          },
+          "types": {
+            "FEW": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "FEW{altitude}",
+              "voice": "few clouds at {altitude}"
+            },
+            "SCT": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "SCT{altitude}{convective}",
+              "voice": "{altitude} scattered {convective}"
+            },
+            "BKN": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "BKN{altitude}{convective}",
+              "voice": "{altitude} broken {convective}"
+            },
+            "OVC": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "OVC{altitude}{convective}",
+              "voice": "{altitude} overcast {convective}"
+            },
+            "VV": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "VV{altitude}",
+              "voice": "indefinite ceiling {altitude}"
+            },
+            "NSC": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "NSC",
+              "voice": "no significant clouds"
+            },
+            "NCD": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "NCD",
+              "voice": "no clouds detected"
+            },
+            "CLR": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "CLR",
+              "voice": "sky clear below one-two thousand"
+            },
+            "SKC": {
+              "$type": "Vatsim.Vatis.Profiles.AtisFormat.Nodes.CloudType, vATIS",
+              "text": "SKC",
+              "voice": "sky clear"
+            }
+          },
+          "convectiveTypes": {
+            "CB": "cumulonimbus",
+            "TCU": "towering cumulus"
+          },
+          "template": {
+            "text": "{clouds}",
+            "voice": "{clouds}"
+          }
+        },
+        "temperature": {
+          "usePlusPrefix": false,
+          "pronounceLeadingZero": false,
+          "template": {
+            "text": "{temp}",
+            "voice": "TEMPERATURE {temp}"
+          }
+        },
+        "dewpoint": {
+          "usePlusPrefix": false,
+          "pronounceLeadingZero": false,
+          "template": {
+            "text": "{dewpoint}",
+            "voice": "DEWPOINT {dewpoint}"
+          }
+        },
+        "altimeter": {
+          "pronounceDecimal": false,
+          "template": {
+            "text": "A{altimeter} ({altimeter|text})",
+            "voice": "ALTIMETER {altimeter}"
+          }
+        },
+        "transitionLevel": {
+          "values": [],
+          "template": {
+            "text": "TRANSITION LEVEL {trl}",
+            "voice": "TRANSITION LEVEL {trl}"
+          }
+        },
+        "closingStatement": {
+          "autoIncludeClosingStatement": true,
+          "template": {
+            "text": "...ADVS YOU HAVE INFO {letter}",
+            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+          }
+        }
+      }
+    }
+  ]
+}
