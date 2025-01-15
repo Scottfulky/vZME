@@ -3,7 +3,7 @@
   "id": "5feeb22e-e502-4b00-9c2a-c8da4f11b565",
   "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME/refs/heads/main/vATIS%20Profile%20-%20Huntsville%20(HSV).json",
   "updateSerial": 2025011005,
-  "composites": [
+  "stations": [
     {
       "id": "a14872a0-e81a-4628-93bb-caf7e1e0355c",
       "name": "Huntsville",
