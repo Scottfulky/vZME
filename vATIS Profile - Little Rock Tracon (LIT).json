@@ -3,7 +3,7 @@
   "id": "18cb6c0b-ed8e-41a0-9d5c-546681dd688d",
   "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME/refs/heads/main/vATIS%20Profile%20-%20Little%20Rock%20Tracon%20(LIT).json",
   "updateSerial": 2025011011,
-  "composites": [
+  "stations": [
     {
       "id": "af624718-d6bd-4488-a103-6a0fc8931a88",
       "name": "Little Rock Adams",
