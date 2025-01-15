@@ -3,7 +3,7 @@
   "id": "cb7ffdbc-da4d-4483-945d-52108bcf372a",
   "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME/refs/heads/main/vATIS%20Profile%20-%20Razorback%20Approach%20(FSM).json",
   "updateSerial": 2025011021,
-  "composites": [
+  "stations": [
     {
       "id": "4067e7f7-b07a-4247-9d2f-b1fd000f785e",
       "name": "Fort Smith",
