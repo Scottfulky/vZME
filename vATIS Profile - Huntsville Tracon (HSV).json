@@ -3,7 +3,7 @@
   "id": "5cb102b9-2661-4c48-89c1-c75c1a759a1f",
   "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME/refs/heads/main/vATIS%20Profile%20-%20Huntsville%20Tracon%20(HSV).json",
   "updateSerial": 2025011006,
-  "composites": [
+  "stations": [
     {
       "id": "a14872a0-e81a-4628-93bb-caf7e1e0355c",
       "name": "Huntsville",
