@@ -3,7 +3,7 @@
   "id": "690cd9b7-c541-49ee-a407-d4a217b6777e",
   "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME/refs/heads/main/vATIS%20Profile%20-%20Fort%20Smith%20(FSM).json",
   "updateSerial": 2025011003,
-  "composites": [
+  "stations": [
     {
       "id": "4067e7f7-b07a-4247-9d2f-b1fd000f785e",
       "name": "Fort Smith",
