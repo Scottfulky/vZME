@@ -3,7 +3,7 @@
   "id": "a53d2993-f7b3-4eee-8197-3708078d2733",
   "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME/refs/heads/main/vATIS%20Profile%20-%20Redstone%20AAF%20(HUA).json",
   "updateSerial": 2025011022,
-  "composites": [
+  "stations": [
     {
       "id": "a2f901f1-ddca-499a-8a29-fa8fc7c26f34",
       "name": "Redstone AAF",
