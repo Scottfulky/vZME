@@ -3,7 +3,7 @@
   "id": "ea2254c4-a5c4-4af0-ab5c-d44a260e0106",
   "updateUrl": "https://raw.githubusercontent.com/Scottfulky/vZME/refs/heads/main/vATIS%20Profile%20-%20Northwest%20Arkansas%20(XNA).json",
   "updateSerial": 2025011018,
-  "composites": [
+  "stations": [
     {
       "id": "8bd892f3-c6ad-40f2-ade4-37a9153179ad",
       "name": "Northwest Arkansas",
